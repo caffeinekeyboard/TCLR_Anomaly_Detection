@@ -1,5 +1,5 @@
 import torch.nn as nn
-from torchvision.models import resnet18
+from torchvision.models import resnet18, resnet50
 
 class BasicEncoder(nn.Module):
     """
@@ -46,3 +46,25 @@ class ResNet18Encoder(nn.Module):
     x = x.view(x.size(0), -1)
     embedding = self.fc(x)
     return embedding
+
+
+
+class ResNet50Encoder(nn.Module):
+  """
+        ResNet-50 encoder.\n
+        23209344 trainable parameters.
+  """
+
+  def __init__(self):
+    super(ResNet50Encoder, self).__init__()
+    self.resnet = resnet50(pretrained=True)
+    self.in_features = self.resnet.fc.in_features
+    self.resnet.fc = nn.Identity()
+    self.fc = nn.Linear(self.in_features, 64)
+
+
+  def forward(self, x):
+    x = self.resnet(x)
+    x = x.view(x.size(0), -1)
+    embedding = self.fc(x)
+    return embedding 
