@@ -11,6 +11,13 @@ This project experiments with ResNet-18 and ResNet-50 as encoder architectures. 
 The dataset consisted of 8 videos with 700 frames each, amounting to a total of 5600 individual datapoints. The hyperparameter values are same as the default arguement values listed in the latter sections.\
 The following are the T-SNE plots representing the data in a latent space of 64 dimensions before and after our best training session:
 
+![Before Training](https://github.com/caffeinekeyboard/TCLR_Anomaly_Detection/assets/96489029/ce015ff9-c2ab-460c-8c59-aee01197ebd3)
+
+![Before Training](https://github.com/caffeinekeyboard/TCLR_Anomaly_Detection/assets/96489029/ebb4e9f1-463d-4ca9-ade7-a6a1dd7cb2fc)
+
+![After Training](https://github.com/caffeinekeyboard/TCLR_Anomaly_Detection/assets/96489029/13d2bff4-025f-4952-950f-42d2e44d9b69)
+
+![After Training](https://github.com/caffeinekeyboard/TCLR_Anomaly_Detection/assets/96489029/7184b5cd-3d16-4bd9-8edd-1618aff9dff3)
 
 These are the computing resources utilized after maximum optimization:
 |Encoder Architecture|Maximum VRAM Utilised|GPU Utilised|
