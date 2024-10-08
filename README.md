@@ -53,7 +53,7 @@ The following are the defaults for optional arguements:
 |-f|Offset of the temporal queue.|7|
 |-t|Temperature for Pairwise-InstDisc Loss (Tau)|0.1|
 
-## Related:
+## Related: 
 
 [TCLR by Ishan Dave](https://github.com/DAVEISHAN/TCLR)\
 [Dave et. al. Research Paper](https://arxiv.org/abs/2101.07974)\
